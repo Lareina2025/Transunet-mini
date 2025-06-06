@@ -46,21 +46,22 @@ python test.py --dataset Synapse --vit_name R50-ViT-B_16
 
 ## 📊 Evaluation Results (12 test cases, 50 epochs, 300 training slices)
 
-| Organ/Class | Dice Score (%) | HD95 (mm) |
-|-------------|----------------|-----------|
-| Class 1     | 76.09          | 119.57    |
-| Class 2     | 60.15          | 72.89     |
-| Class 3     | 77.72          | 82.49     |
-| Class 4     | 71.44          | 153.87    |
-| Class 5     | 87.16          | 80.17     |
-| Class 6     | **39.82**      | 21.82     |
-| Class 7     | 73.17          | 108.68    |
-| Class 8     | 63.98          | 25.97     |
+| Class   | Mean Dice | Mean HD95 |
+| ------- | --------- | --------- |
+| Class 1 | 0.7758    | 98.80 mm  |
+| Class 2 | 0.6136    | 88.67 mm  |
+| Class 3 | 0.7465    | 82.20 mm  |
+| Class 4 | 0.6912    | 175.18 mm |
+| Class 5 | 0.8818    | 79.96 mm  |
+| Class 6 | 0.4006    | 24.35 mm  |
+| Class 7 | 0.7530    | 105.42 mm |
+| Class 8 | 0.6234    | 35.76 mm  |
+
 
 **Overall performance on test set**:
 
-- Mean Dice: **0.6869**
-- Mean HD95: **83.18mm**
+- Mean Dice: **0.6857**
+- Mean HD95: **86.29mm**
 
 > ⚠️ Note: Due to limited computational resources, the model was trained with only 300 slices for 50 epochs. Performance is lower than full-dataset training but still provides a baseline reference.
 
